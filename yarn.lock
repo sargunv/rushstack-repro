@@ -683,13 +683,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/eslint-patch@npm:^1.0.6":
-  version: 1.0.6
-  resolution: "@rushstack/eslint-patch@npm:1.0.6"
-  checksum: cc01301f09d881da550a2f3c6a3f10b72dfb4c422b7a00a4b2e8bfc90d998aee06f08a6e7c9d03db89d5b286318d533435dc6c8c500884fe6ab05cb1309dfcc7
-  languageName: node
-  linkType: hard
-
 "@rushstack/eslint-plugin-packlets@npm:^0.2.0":
   version: 0.2.0
   resolution: "@rushstack/eslint-plugin-packlets@npm:0.2.0"
@@ -711,17 +704,12 @@ __metadata:
 "@sargunv/eslint-config@workspace:*, @sargunv/eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "@sargunv/eslint-config@workspace:packages/eslint-config"
-  dependencies:
-    "@rushstack/eslint-patch": ^1.0.6
+  peerDependencies:
     "@rushstack/eslint-plugin-packlets": ^0.2.0
     "@typescript-eslint/eslint-plugin": ^4.15.2
     "@typescript-eslint/parser": ^4.15.2
-    eslint-config-alloy: ^3.10.0
-  peerDependencies:
     eslint: ^7.21.0
-  peerDependenciesMeta:
-    eslint:
-      optional: true
+    eslint-config-alloy: ^3.10.0
   languageName: unknown
   linkType: soft
 
@@ -729,11 +717,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@sargunv/monorepo@workspace:."
   dependencies:
+    "@rushstack/eslint-plugin-packlets": ^0.2.0
     "@sargunv/eslint-config": "workspace:*"
     "@types/eslint": ^7.2.6
     "@types/prettier": ^2.2.1
+    "@typescript-eslint/eslint-plugin": ^4.15.2
+    "@typescript-eslint/parser": ^4.15.2
     "@yarnpkg/pnpify": ^2.4.0
     eslint: ^7.21.0
+    eslint-config-alloy: ^3.10.0
     husky: ^5.1.1
     ignore-sync: ^3.1.0
     jest: ^26.6.3
@@ -748,7 +740,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@sargunv/sandbox@workspace:packages/sandbox"
   dependencies:
+    "@rushstack/eslint-plugin-packlets": ^0.2.0
     "@sargunv/eslint-config": "workspace:*"
+    "@typescript-eslint/eslint-plugin": ^4.15.2
+    "@typescript-eslint/parser": ^4.15.2
+    eslint: ^7.21.0
+    eslint-config-alloy: ^3.10.0
   languageName: unknown
   linkType: soft
 

@@ -1,5 +1,3 @@
-require("@rushstack/eslint-patch/modern-module-resolution")
-
 module.exports = {
   plugins: ["@rushstack/eslint-plugin-packlets"],
   overrides: [

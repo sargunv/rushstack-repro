@@ -1,5 +1,3 @@
-require("@rushstack/eslint-patch/modern-module-resolution")
-
 module.exports = {
   root: true, // Disable automatic upward propogation to prevent surprises.
   parser: "@typescript-eslint/parser",
