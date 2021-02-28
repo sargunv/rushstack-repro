@@ -1,29 +1,17 @@
 {
   "name": "@sargunv/sandbox",
   "private": true,
-  "main": "index.ts",
-  "scripts": {
-    "build": "tsc"
-  },
+  "main": "src/index.js",
   "eslintConfig": {
     "parserOptions": {
       "tsconfigRootDir": "packages/sandbox"
     },
     "extends": [
-      "@sargunv/eslint-config/mixins/packlets",
-      "@sargunv/eslint-config/mixins/ts-strict"
-    ],
-    "rules": {
-      "@typescript-eslint/no-unused-vars": "warn"
-    }
-  },
-  "dependencies": {
-    "tslib": "^2.1.0"
+      "@sargunv/eslint-config/mixins/packlets"
+    ]
   },
   "devDependencies": {
-    "@sargunv/eslint-config": "workspace:*",
-    "@sargunv/tsconfig": "workspace:*",
-    "typescript": "4.1.5"
+    "@sargunv/eslint-config": "workspace:*"
   },
   "engines": {
     "node": "14.x"
