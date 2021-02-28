@@ -715,7 +715,6 @@ __metadata:
     "@rushstack/eslint-patch": ^1.0.6
     "@rushstack/eslint-plugin-packlets": ^0.2.0
     "@typescript-eslint/eslint-plugin": ^4.15.2
-    "@typescript-eslint/experimental-utils": ^4.15.2
     "@typescript-eslint/parser": ^4.15.2
     eslint-config-alloy: ^3.10.0
   peerDependencies:
@@ -1041,7 +1040,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/experimental-utils@npm:4.15.2, @typescript-eslint/experimental-utils@npm:^4.15.2":
+"@typescript-eslint/experimental-utils@npm:4.15.2":
   version: 4.15.2
   resolution: "@typescript-eslint/experimental-utils@npm:4.15.2"
   dependencies:
