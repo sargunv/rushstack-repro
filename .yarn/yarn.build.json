@@ -1,0 +1,40 @@
+{
+  "comment": "This is an auto-generated file, it keeps track of whats been built. This is a local file, don't store this in version control.",
+  "packages": {
+    "packages/eslint-config#build": {
+      "lastModified": 1614549924604.816,
+      "status": "succeeded",
+      "haveCheckedForRerun": true,
+      "rerun": true,
+      "command": "build"
+    },
+    "packages/modsman#build": {
+      "lastModified": 1614509332147.8184,
+      "status": "succeeded",
+      "haveCheckedForRerun": false,
+      "rerun": true,
+      "command": "build"
+    },
+    "packages/eslint-config#test": {
+      "lastModified": 1614508330534.8525,
+      "status": "succeeded",
+      "haveCheckedForRerun": false,
+      "rerun": true,
+      "command": "build"
+    },
+    "packages/modsman#test": {
+      "lastModified": 1614509097890.3313,
+      "status": "succeeded",
+      "haveCheckedForRerun": false,
+      "rerun": true,
+      "command": "build"
+    },
+    "packages/sandbox#build": {
+      "lastModified": 1614549996421.321,
+      "status": "succeeded",
+      "haveCheckedForRerun": true,
+      "rerun": false,
+      "command": "build"
+    }
+  }
+}

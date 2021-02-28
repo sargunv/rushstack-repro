@@ -1,0 +1,7 @@
+{
+  "extends": "@sargunv/tsconfig/node",
+  "compilerOptions": {
+    "outDir": "./lib",
+    "rootDir": "./src"
+  }
+}

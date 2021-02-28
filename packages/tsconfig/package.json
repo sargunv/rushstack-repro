@@ -1,0 +1,7 @@
+{
+  "name": "@sargunv/tsconfig",
+  "private": true,
+  "engines": {
+    "node": "14.x"
+  }
+}

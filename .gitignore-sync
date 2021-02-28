@@ -1,0 +1,8 @@
+[github/gitignore]
+Global/macOS.gitignore
+Global/Windows.gitignore
+Global/Linux.gitignore
+Node.gitignore
+
+[inline]
+packages/*/lib/

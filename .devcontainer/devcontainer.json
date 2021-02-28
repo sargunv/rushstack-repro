@@ -1,0 +1,58 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.154.0/containers/javascript-node-postgres
+// Update the VARIANT arg in docker-compose.yml to pick a Node.js version: 10, 12, 14
+{
+  "name": "GitHub Codespaces (Default)",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "remoteUser": "codespace",
+
+  "postCreateCommand": "sudo chown -Rc codespace:codespace . && yarn install && yarn setup",
+
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+
+    // template
+    "go.useGoProxyToCheckForToolUpdates": false,
+    "go.useLanguageServer": true,
+    "go.gopath": "/go",
+    "go.goroot": "/usr/local/go",
+    "go.toolsGopath": "/go/bin",
+    "python.pythonPath": "/opt/python/latest/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+    "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+    "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+    "python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+    "python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+    "python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+    "python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+    "python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+    "python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
+    "lldb.executable": "/usr/bin/lldb",
+    "files.watcherExclude": {
+      "**/target/**": true
+    }
+  },
+
+  "extensions": [
+    // universal
+    "GitHub.vscode-pull-request-github",
+    "ms-azuretools.vscode-docker",
+    "codezombiech.gitignore",
+    "visualstudioexptteam.vscodeintellicode",
+    "editorconfig.editorconfig",
+    "irongeek.vscode-env",
+    "arcanis.vscode-zipfs",
+
+    // nodejs
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "apollographql.vscode-apollo",
+    "orta.vscode-jest",
+    "eg2.vscode-npm-script"
+  ],
+
+  "forwardPorts": []
+}
